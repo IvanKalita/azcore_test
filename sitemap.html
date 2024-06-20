@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html data-theme="light" class="page page--sitemap">
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="address=no" />
+    
+    <!-- defaults -->
+    <script>
+      window.modalDefaults = {};
+    
+      window.dropdownDefaults = {};
+    
+      window.selectDefaults = {};
+    </script>
+
+    <title>sitemap</title>
+
+    <style>
+      .sitemap__nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .sitemap__link {
+        font-size: 2rem;
+        line-height: 1.3;
+        color: #000;
+        text-decoration: none;
+        transition: color 0.2s;
+      }
+
+      .sitemap__link:hover {
+        text-decoration: underline;
+      }
+    </style>
+  <script src="js/_head.js"></script><link href="css/bundle.css" rel="stylesheet"></head>
+  <body>
+    <div class="content">
+      <!-- header -->
+      <header id="header" class="header">
+        <div class="container">
+          <!-- wrap -->
+          <div class="header__wrap">
+            <a href="#" class="header__logo"><span>AZ</span>CORE</a>
+      
+            <nav class="header__nav">
+              <ul class="header__list">
+                <li class="header__item">
+                  <a href="#" class="header__link">О компании</a>
+                </li>
+                <li class="header__item">
+                  <a href="#" class="header__link">Кейсы</a>
+                </li>
+                <li class="header__item">
+                  <a href="#" class="header__link">Услуги</a>
+                </li>
+                <li class="header__item">
+                  <a href="#" class="header__link">AZTracker</a>
+                </li>
+      
+                <li class="header__item">
+                  <a href="#" class="header__link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+      
+            <div class="header__contacts">
+              <div class="header__contacts-wrap">
+                <a href="tel:+84959555520" class="header__contact">8 495 955 55 20 </a>
+                <a href="#" class="header__contact header__contact--blue"> Оставить заявку </a>
+              </div>
+            </div>
+      
+            <div class="header__burger j_toggleMenu">
+              <div class="burger__mobile">
+                <span class="burger__mobile-line burger__mobile-top"></span>
+                <span class="burger__mobile-line burger__mobile-mid"></span>
+                <span class="burger__mobile-line burger__mobile-bot"></span>
+              </div>
+            </div>
+          </div>
+          <!-- ./ End of wrap -->
+        </div>
+      </header>
+      <!-- ./ End of header -->
+
+      <main>
+        <!-- sitemap -->
+        <section class="sitemap-section">
+          <div class="container">
+            <h1>sitemap</h1>
+            <nav class="sitemap__nav">
+              <a class="sitemap__link" href="./demo.html">
+                demo
+              </a>
+              <a class="sitemap__link" href="./index.html">
+                index
+              </a>
+              <a class="sitemap__link" href="./UI.html">
+                UI
+              </a>
+            </nav>
+          </div>
+          <!-- ./ End of container -->
+        </section>
+        <!-- ./ End of sitemap -->
+      </main>
+
+      <!-- footer -->
+      <footer class="footer">
+        <div class="container">
+          <!-- wrap -->
+          <div class="footer__wrap">
+            <div class="footer__left">
+              <a href="#" class="footer__logo"><span>AZ</span>CORE</a>
+      
+              <div class="footer__text">
+                <p>
+                  Общество с ограниченной ответсвенностью <br />
+                  “АЙ-ТИ КОМПАНИЯ АЗКОРЕ” <br />
+                  ИНН 4025460984, ОГРН 1224000003479
+                </p>
+                <p>
+                  Адрес: 249022, Калужская оласть, м. р-н Боровский, н.п. Коряково, ул. Армейская, д.37
+                </p>
+      
+                <p>
+                  <a href="#">Политика конфиденциальности</a>
+                </p>
+              </div>
+            </div>
+      
+            <div class="footer__right">
+              <div class="footer__links">
+                <a href="tel:+79779779071" class="footer__link">+7 (977) 977-90-71</a>
+                <a href="mailto:info@azcore.ru" class="footer__link footer__link--mail">info@azcore.ru</a>
+              </div>
+            </div>
+          </div>
+          <!-- ./ End of wrap -->
+        </div>
+      </footer>
+      <!-- ./ End of footer -->
+    </div>
+
+    <!-- Modals -->
+    <div id="modal-example" class="modal-wrapper modal-wrapper--example" data-modal>
+      <div class="modal">
+        <div class="modal__wrap">
+          <div class="modal__header"> Test modal title </div>
+    
+          <div class="modal__body">
+            <div class="modal__content">
+              <p class="modal__text"> Lorem ipsum dolor sit amet consectetur. </p>
+              <p class="modal__text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusamus?
+              </p>
+              <p class="modal__text"> Lorem ipsum dolor sit. </p>
+            </div>
+          </div>
+    
+          <div class="modal__footer">
+            <p class="modal__text"> Test modal footer </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- form modal -->
+    <div class="modal-wrapper j_modal modal-wrapper--form" id="modal-form" data-modal>
+      <div class="modal modal--small" data-scroll-lock-scrollable>
+        <div class="modal__header">
+          <button class="button button-close j_closeModal">
+            <svg class="button__icon">
+              <use xlink:href="svg/sprite.svg#close"></use>
+            </svg>
+          </button>
+        </div>
+    
+        <div class="modal__wrap">
+          <div class="modal__body">
+            <div class="modal-form">
+              <div class="modal-form__header">
+                <div class="section-header">
+                  <div class="section-header__wrap">
+                    <div class="section-header__uptitle">оставьте заявку, чтобы</div>
+                    <h2 class="section-header__title">Рассчитать проект</h2>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="modal-form__wrap">
+                <form action="" class="modal__form">
+                  <div class="modal__form-wrap">
+                    <div class="modal__form-inputs">
+                      <div class="modal__form-input">
+                        <div class="input-wrapper">
+                          <div class="input-container">
+                            <input
+                              type="text"
+                              class="input input--placeholder"
+                              placeholder="Имя*"
+                              required
+                            />
+                            <span class="input-placeholder"> Имя* </span>
+                          </div>
+                        </div>
+                      </div>
+    
+                      <div class="modal__form-input">
+                        <div class="input-wrapper">
+                          <div class="input-container invalid">
+                            <input
+                              type="text"
+                              class="input input--placeholder"
+                              placeholder="Компания"
+                              value="Название компании"
+                            />
+                            <span class="input-placeholder"> Компания </span>
+                          </div>
+                          <p class="input-message input-message--invalid"> Сообщение об ошибке </p>
+                        </div>
+                      </div>
+    
+                      <div class="modal__form-input">
+                        <div class="input-wrapper">
+                          <div class="input-container">
+                            <input
+                              data-inputmask="'mask': '+ 7(999) 999-99-99'"
+                              type="tel"
+                              class="input input--placeholder j_mask"
+                              placeholder="Телефон"
+                              required
+                            />
+                            <span class="input-placeholder"> Телефон </span>
+                          </div>
+                        </div>
+                      </div>
+    
+                      <div class="modal__form-input">
+                        <div class="input-wrapper">
+                          <div class="input-container">
+                            <input type="email" class="input input--placeholder" placeholder="Почта" />
+                            <span class="input-placeholder"> Почта </span>
+                          </div>
+                        </div>
+                      </div>
+    
+                      <div class="modal__form-input modal__form-input--full">
+                        <div class="input-wrapper">
+                          <div class="input-container">
+                            <textarea rows="4" class="textarea" placeholder="Опишите задачу"></textarea>
+                          </div>
+                        </div>
+                      </div>
+    
+                      <div
+                        class="modal__form-input modal__form-input--file contacts__application-input--file j_file"
+                      >
+                        <div class="input-container">
+                          <input type="file" class="input" placeholder="Прикрепить файл" />
+                          <span class="input-file-btn">Прикрепить файл</span>
+                          <span class="input-file-text">
+                            <svg class="button__icon">
+                              <use xlink:href="svg/sprite.svg#clip2"></use>
+                            </svg>
+                          </span>
+                        </div>
+                      </div>
+    
+                      <div class="modal__form-input">
+                        <div class="input-wrapper">
+                          <div class="input-container">
+                            <div class="modal__form-button">
+                              <button class="button button--big" type="submit">
+                                <span>Отправить</span>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <div class="modal__form-button-text">
+                    Нажав на кнопку, соглашаюсь на обработку
+                    <a href="#">персональных данных</a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--./ End of form modal --><!-- ./ End of Modals -->
+    <!-- Tooltips -->
+    <!--  -->
+    <!-- ./ End of Tooltips -->
+  <script src="js/bundle.js"></script><script src="js/index.js"></script></body>
+</html>

@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html data-theme="light" class="page page--demo">
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="address=no" />
+    
+    <!-- defaults -->
+    <script>
+      window.modalDefaults = {};
+    
+      window.dropdownDefaults = {};
+    
+      window.selectDefaults = {};
+    </script>
+
+    <title>demo</title>
+  <script src="js/_head.js"></script><link href="css/bundle.css" rel="stylesheet"></head>
+  <body>
+    <div class="content">
+      <!-- header -->
+      <header id="header" class="header">
+        <div class="container">
+          <!-- wrap -->
+          <div class="header__wrap">
+            <a href="#" class="header__logo"><span>AZ</span>CORE</a>
+      
+            <nav class="header__nav">
+              <ul class="header__list">
+                <li class="header__item">
+                  <a href="#" class="header__link">О компании</a>
+                </li>
+                <li class="header__item">
+                  <a href="#" class="header__link">Кейсы</a>
+                </li>
+                <li class="header__item">
+                  <a href="#" class="header__link">Услуги</a>
+                </li>
+                <li class="header__item">
+                  <a href="#" class="header__link">AZTracker</a>
+                </li>
+      
+                <li class="header__item">
+                  <a href="#" class="header__link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+      
+            <div class="header__contacts">
+              <div class="header__contacts-wrap">
+                <a href="tel:+84959555520" class="header__contact">8 495 955 55 20 </a>
+                <a href="#" class="header__contact header__contact--blue"> Оставить заявку </a>
+              </div>
+            </div>
+      
+            <div class="header__burger j_toggleMenu">
+              <div class="burger__mobile">
+                <span class="burger__mobile-line burger__mobile-top"></span>
+                <span class="burger__mobile-line burger__mobile-mid"></span>
+                <span class="burger__mobile-line burger__mobile-bot"></span>
+              </div>
+            </div>
+          </div>
+          <!-- ./ End of wrap -->
+        </div>
+      </header>
+      <!-- ./ End of header -->
+
+      <main>
+        <!-- example -->
+        <section class="example-section">
+          <div class="container">
+            <div class="example">
+              <div class="example__wrap">
+                <div class="example__header">
+                  <h1 class="example__title">
+                    demo
+                  </h1>
+                </div>
+
+                <div class="example__body">
+                  <form
+                    id="form-test"
+                    style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 8px"
+                  >
+                    <div class="example-select">
+                      <select
+                        id="select-1"
+                        name="select-name-1"
+                        class="select"
+                        data-select='{"placeholder": "Dropdown placeholder", "search": {"enabled": true, "placeholder": "Search", "value": ""}, "svgPath": "svg/sprite.svg"}'
+                      >
+                        <optgroup label="Animals">
+                          <option value="dog" selected> Dog </option>
+                          <option value="cat"> Cat </option>
+                          <option value="hamster"> Hamster </option>
+                        </optgroup>
+                        <optgroup label="Flying pets">
+                          <option value="parrot" disabled> Parrot </option>
+                          <option value="macaw"> Macaw </option>
+                          <option value="albatross"> Albatross </option>
+                        </optgroup>
+                      </select>
+                    </div>
+
+                    <div class="example-select">
+                      <select
+                        id="select-2"
+                        name="select-name-2"
+                        class="select"
+                        data-select='{"placeholder": "Dropdown placeholder"}'
+                        multiple
+                      >
+                        <optgroup label="Animals">
+                          <option value="dog" selected> Dog </option>
+                          <option value="cat"> Cat </option>
+                          <option value="hamster"> Hamster </option>
+                        </optgroup>
+                        <optgroup label="Flying pets">
+                          <option value="parrot"> Parrot </option>
+                          <option value="macaw" disabled> Macaw </option>
+                          <option value="albatross"> Albatross </option>
+                        </optgroup>
+
+                        <option value="parrot2" disabled> Parrot2 </option>
+                        <option value="macaw2"> Macaw2 </option>
+                        <option value="albatross2"> Albatross2 </option>
+                      </select>
+                    </div>
+
+                    <div class="example-select">
+                      <select
+                        id="select-3"
+                        name="select-name-3"
+                        class="select"
+                        data-select='{"placeholder": "Dropdown placeholder", "templateItem": "select-item-default"}'
+                      >
+                        <option
+                          value="parrot"
+                          data-option='{"0": "https://via.placeholder.com/40x40", "1": "option-icon-1", "2": "Parrot", "3": "Parrot text"}'
+                          disabled
+                        >
+                          Parrot
+                        </option>
+                        <option
+                          value="macaw"
+                          data-option='{"0": "https://via.placeholder.com/40x40", "1": "option-icon-2", "2": "Macaw", "3": "Macaw text"}'
+                        >
+                          Macaw
+                        </option>
+                        <option
+                          value="albatross"
+                          data-option='{"0": "https://via.placeholder.com/40x40", "1": "option-icon-3", "2": "Albatross", "3": "Albatross text"}'
+                        >
+                          Albatross
+                        </option>
+                      </select>
+                    </div>
+
+                    <div class="example-select">
+                      <select
+                        id="select-4"
+                        name="select-name-4"
+                        class="select"
+                        data-select='{"placeholder": "Dropdown placeholder", "templateItem": "select-item-default", "search": {"enabled": true, "placeholder": "Search", "value": "", "inside": true}}'
+                        multiple
+                      >
+                        <option
+                          value="parrot"
+                          data-option='{"0": "https://via.placeholder.com/40x40", "1": "option-icon-1", "2": "Parrot", "3": "Parrot text"}'
+                          disabled
+                        >
+                          Parrot
+                        </option>
+                        <option
+                          value="macaw"
+                          data-option='{"0": "https://via.placeholder.com/40x40", "1": "option-icon-2", "2": "Macaw", "3": "Macaw text"}'
+                        >
+                          Macaw
+                        </option>
+                        <option
+                          value="albatross"
+                          data-option='{"0": "https://via.placeholder.com/40x40", "1": "option-icon-3", "2": "Albatross", "3": "Albatross text"}'
+                        >
+                          Albatross
+                        </option>
+                      </select>
+                    </div>
+
+                    <div class="example-select">
+                      <select
+                        id="select-5"
+                        name="select-name-5"
+                        class="select"
+                        data-select='{"placeholder": "Dropdown placeholder", "search": {"enabled": true, "placeholder": "Search", "value": "", "autofocus": true, "inside": true}}'
+                        multiple
+                      >
+                        <option value="parrot" disabled> Parrot </option>
+                        <option value="macaw"> Macaw </option>
+                        <option value="albatross"> Albatross </option>
+                      </select>
+                    </div>
+
+                    <div class="example-select">
+                      <select
+                        id="select-6"
+                        name="select-name-6"
+                        class="select"
+                        data-select='{"placeholder": "Dropdown placeholder", "selectAllBtn": {"enabled": true, "textSelectAll": "Выбрать все", "textUnselectAll": "Убрать все"}}'
+                        multiple
+                      >
+                        <option value="dog"> Dog </option>
+                        <option value="cat"> Cat </option>
+                        <option value="hamster"> Hamster </option>
+                        <option value="parrot"> Parrot </option>
+                        <option value="macaw" disabled> Macaw </option>
+                        <option value="albatross"> Albatross </option>
+                      </select>
+                    </div>
+
+                    <div style="display: none" class="select-template" id="select-item-default">
+                      <div class="select-template__img-wrapper">
+                        <img src="{0}" alt="{1}" class="select-template__img" />
+                      </div>
+
+                      <div class="select-template__wrap">
+                        <span class="select-template__title">{2}</span>
+                        <p class="select-template__text">{3}</p>
+                      </div>
+                    </div>
+
+                    <button class="button">SUBMIT</button>
+                  </form>
+
+                  <script>
+                    document.getElementById('form-test').addEventListener('submit', function (e) {
+                      e.preventDefault();
+
+                      const data = new FormData(this);
+                      const formatData = {};
+
+                      for (var key of data.entries()) {
+                        // console.log(key[0] + ': ' + key[1]);
+                        if (!formatData[key[0]]) {
+                          formatData[key[0]] = [];
+                        }
+
+                        formatData[key[0]].push(key[1]);
+                      }
+
+                      console.log(formatData);
+                    });
+                  </script>
+
+                  <div style="margin-top: 4rem">
+                    <div class="tabs" data-tabs="test-tabs">
+                      <button class="button button-tab" data-tab="test-tab-1"> tab 1 </button>
+                      <button class="button button-tab" data-tab="test-tab-2"> tab 2 </button>
+                      <button class="button button-tab" data-tab="test-tab-3"> tab 3 </button>
+                    </div>
+
+                    <div class="tabs-contents" data-tabs-contents="test-tabs">
+                      <div class="tab-content" data-tab-content="test-tab-1"> tab content 1 </div>
+                      <div class="tab-content" data-tab-content="test-tab-2">
+                        tab content 2
+
+                        <div style="padding-left: 2rem">
+                          <div class="tabs" data-tabs="test-tabs-2">
+                            <button class="button button-tab" data-tab="test-tab-1">
+                              tab 2-1
+                            </button>
+                            <button class="button button-tab" data-tab="test-tab-2">
+                              tab 2-2
+                            </button>
+                            <button class="button button-tab" data-tab="test-tab-3">
+                              tab 2-3
+                            </button>
+                          </div>
+
+                          <div class="tabs-contents" data-tabs-contents="test-tabs-2">
+                            <div class="tab-content" data-tab-content="test-tab-1">
+                              tab content 2-1
+
+                              <div style="padding-left: 2rem">
+                                <div class="tabs" data-tabs="test-tabs-3">
+                                  <button class="button button-tab" data-tab="test-tab-1">
+                                    tab 3-1
+                                  </button>
+                                  <button class="button button-tab" data-tab="test-tab-2">
+                                    tab 3-2
+                                  </button>
+                                  <button class="button button-tab" data-tab="test-tab-3">
+                                    tab 3-3
+                                  </button>
+                                </div>
+
+                                <div class="tabs-contents" data-tabs-contents="test-tabs-3">
+                                  <div class="tab-content" data-tab-content="test-tab-1">
+                                    tab content 3-1
+                                  </div>
+                                  <div class="tab-content" data-tab-content="test-tab-2">
+                                    tab content 3-2
+                                  </div>
+                                  <div class="tab-content" data-tab-content="test-tab-3">
+                                    tab content 3-3
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="tab-content" data-tab-content="test-tab-2">
+                              tab content 2-2
+                            </div>
+                            <div class="tab-content" data-tab-content="test-tab-3">
+                              tab content 2-3
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-content" data-tab-content="test-tab-3"> tab content 3 </div>
+                    </div>
+                  </div>
+
+                  <div style="margin-top: 4rem">
+                    <button class="button" data-modal-target="#modal-example">
+                      modal example
+                    </button>
+                  </div>
+
+                  <div style="margin-top: 4rem">
+                    <div style="display: inline-flex; gap: 1rem">
+                      <div class="test__dropdown">
+                        <div id="dropdown" class="dropdown" data-dropdown data-tippy="Dropdown">
+                          <button class="button dropdown__button j_toggleDropdown">
+                            <span> Dropdown </span>
+                            <div class="dropdown__arrow-wrapper">
+                              <svg class="svg dropdown__arrow" >
+                                <use xlink:href="svg/sprite.svg#arrow-down"></use>
+                              </svg>
+                            </div>
+                          </button>
+                          <div class="dropdown__content"> Dropdown content </div>
+                        </div>
+                      </div>
+
+                      <div class="test__dropdown">
+                        <div
+                          id="dropdown2"
+                          class="dropdown"
+                          data-dropdown='{"popper": true}'
+                          data-tippy="Popper Dropdown"
+                        >
+                          <button class="button dropdown__button j_toggleDropdown">
+                            <span> Popper Dropdown </span>
+                            <div class="dropdown__arrow-wrapper">
+                              <svg class="svg dropdown__arrow" >
+                                <use xlink:href="svg/sprite.svg#arrow-down"></use>
+                              </svg>
+                            </div>
+                          </button>
+                          <div class="dropdown__content"> Popper Dropdown content </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div style="margin-top: 4rem">
+                    <div class="container">
+                      <div class="container__wrap">
+                        <div class="container__left" style="background-color: #ccc">
+                          <div class="test-content" style="min-height: 100px">
+                            container__left
+                          </div>
+                        </div>
+
+                        <div class="container__right" style="background-color: #ddd">
+                          <div class="test-content" style="min-height: 100px">
+                            container__right
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="example__footer"> </div>
+              </div>
+            </div>
+          </div>
+          <!-- ./ End of container -->
+        </section>
+        <!-- ./ End of example -->
+      </main>
+
+      <!-- footer -->
+      <footer class="footer">
+        <div class="container">
+          <!-- wrap -->
+          <div class="footer__wrap">
+            <div class="footer__left">
+              <a href="#" class="footer__logo"><span>AZ</span>CORE</a>
+      
+              <div class="footer__text">
+                <p>
+                  Общество с ограниченной ответсвенностью <br />
+                  “АЙ-ТИ КОМПАНИЯ АЗКОРЕ” <br />
+                  ИНН 4025460984, ОГРН 1224000003479
+                </p>
+                <p>
+                  Адрес: 249022, Калужская оласть, м. р-н Боровский, н.п. Коряково, ул. Армейская, д.37
+                </p>
+      
+                <p>
+                  <a href="#">Политика конфиденциальности</a>
+                </p>
+              </div>
+            </div>
+      
+            <div class="footer__right">
+              <div class="footer__links">
+                <a href="tel:+79779779071" class="footer__link">+7 (977) 977-90-71</a>
+                <a href="mailto:info@azcore.ru" class="footer__link footer__link--mail">info@azcore.ru</a>
+              </div>
+            </div>
+          </div>
+          <!-- ./ End of wrap -->
+        </div>
+      </footer>
+      <!-- ./ End of footer -->
+    </div>
+
+    <!-- Modals -->
+    <div id="modal-example" class="modal-wrapper modal-wrapper--example" data-modal>
+      <div class="modal">
+        <div class="modal__wrap">
+          <div class="modal__header"> Test modal title </div>
+    
+          <div class="modal__body">
+            <div class="modal__content">
+              <p class="modal__text"> Lorem ipsum dolor sit amet consectetur. </p>
+              <p class="modal__text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusamus?
+              </p>
+              <p class="modal__text"> Lorem ipsum dolor sit. </p>
+            </div>
+          </div>
+    
+          <div class="modal__footer">
+            <p class="modal__text"> Test modal footer </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- form modal -->
+    <div class="modal-wrapper j_modal modal-wrapper--form" id="modal-form" data-modal>
+      <div class="modal modal--small" data-scroll-lock-scrollable>
+        <div class="modal__header">
+          <button class="button button-close j_closeModal">
+            <svg class="button__icon">
+              <use xlink:href="svg/sprite.svg#close"></use>
+            </svg>
+          </button>
+        </div>
+    
+        <div class="modal__wrap">
+          <div class="modal__body">
+            <div class="modal-form">
+              <div class="modal-form__header">
+                <div class="section-header">
+                  <div class="section-header__wrap">
+                    <div class="section-header__uptitle">оставьте заявку, чтобы</div>
+                    <h2 class="section-header__title">Рассчитать проект</h2>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="modal-form__wrap">
+                <form action="" class="modal__form">
+                  <div class="modal__form-wrap">
+                    <div class="modal__form-inputs">
+                      <div class="modal__form-input">
+                        <div class="input-wrapper">
+                          <div class="input-container">
+                            <input
+                              type="text"
+                              class="input input--placeholder"
+                              placeholder="Имя*"
+                              required
+                            />
+                            <span class="input-placeholder"> Имя* </span>
+                          </div>
+                        </div>
+                      </div>
+    
+                      <div class="modal__form-input">
+                        <div class="input-wrapper">
+                          <div class="input-container invalid">
+                            <input
+                              type="text"
+                              class="input input--placeholder"
+                              placeholder="Компания"
+                              value="Название компании"
+                            />
+                            <span class="input-placeholder"> Компания </span>
+                          </div>
+                          <p class="input-message input-message--invalid"> Сообщение об ошибке </p>
+                        </div>
+                      </div>
+    
+                      <div class="modal__form-input">
+                        <div class="input-wrapper">
+                          <div class="input-container">
+                            <input
+                              data-inputmask="'mask': '+ 7(999) 999-99-99'"
+                              type="tel"
+                              class="input input--placeholder j_mask"
+                              placeholder="Телефон"
+                              required
+                            />
+                            <span class="input-placeholder"> Телефон </span>
+                          </div>
+                        </div>
+                      </div>
+    
+                      <div class="modal__form-input">
+                        <div class="input-wrapper">
+                          <div class="input-container">
+                            <input type="email" class="input input--placeholder" placeholder="Почта" />
+                            <span class="input-placeholder"> Почта </span>
+                          </div>
+                        </div>
+                      </div>
+    
+                      <div class="modal__form-input modal__form-input--full">
+                        <div class="input-wrapper">
+                          <div class="input-container">
+                            <textarea rows="4" class="textarea" placeholder="Опишите задачу"></textarea>
+                          </div>
+                        </div>
+                      </div>
+    
+                      <div
+                        class="modal__form-input modal__form-input--file contacts__application-input--file j_file"
+                      >
+                        <div class="input-container">
+                          <input type="file" class="input" placeholder="Прикрепить файл" />
+                          <span class="input-file-btn">Прикрепить файл</span>
+                          <span class="input-file-text">
+                            <svg class="button__icon">
+                              <use xlink:href="svg/sprite.svg#clip2"></use>
+                            </svg>
+                          </span>
+                        </div>
+                      </div>
+    
+                      <div class="modal__form-input">
+                        <div class="input-wrapper">
+                          <div class="input-container">
+                            <div class="modal__form-button">
+                              <button class="button button--big" type="submit">
+                                <span>Отправить</span>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <div class="modal__form-button-text">
+                    Нажав на кнопку, соглашаюсь на обработку
+                    <a href="#">персональных данных</a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--./ End of form modal --><!-- ./ End of Modals -->
+    <!-- Tooltips -->
+    <!--  -->
+    <!-- ./ End of Tooltips -->
+  <script src="js/bundle.js"></script></body>
+</html>
